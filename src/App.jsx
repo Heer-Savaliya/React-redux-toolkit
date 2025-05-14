@@ -1,10 +1,13 @@
 import React from 'react'
+import Navbar from './components/navbar'
+import UserDetails from './components/UserDetails'
 
 const App = () => {
   return (
-    <div>
-      <h1>App</h1>
-    </div>
+    <>
+      <Navbar />
+      <UserDetails />
+    </>
   )
 }
 
