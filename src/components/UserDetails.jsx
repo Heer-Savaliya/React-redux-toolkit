@@ -1,9 +1,17 @@
 import React from "react";
 import DeleteAllUser from "./DeleteAllUser";
 import { fakeUserData } from "../API/Api";
+import { useDispatch } from "react-redux";
+import { addUser } from "../store/Slices/UserSlice";
 
 const UserDetails = () => {
-  const addNewUsers = ()=>{}
+  const dispatch = useDispatch();
+
+  const addNewUsers = (name)=>{
+    dispatch(addUser(name));
+    // console.log(name);
+    
+  }
   return (
     <div className="w-full md:w-[80%] lg:w-[50%]  mx-auto">
       {/* Admin table */}
