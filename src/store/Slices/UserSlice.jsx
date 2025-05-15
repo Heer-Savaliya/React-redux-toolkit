@@ -13,7 +13,8 @@ const userSlice = createSlice({
             state.splice(action.payload,1);     // splice(startIndex, deleteCount)
         },
         deleteUsers(state,action){
-            return state = [];
+            // return state = [];   or
+            return [];
         },
     },
 });
