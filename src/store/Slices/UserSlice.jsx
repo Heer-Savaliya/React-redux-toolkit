@@ -11,9 +11,10 @@ const userSlice = createSlice({
         removeUser(state,action){
             // console.log("hyy" + action.payload);
             state.splice(action.payload,1);     // splice(startIndex, deleteCount)
-            // return state.filter(user => user.id !== action.payload);
         },
-        deleteUsers(state,action){},
+        deleteUsers(state,action){
+            return state = [];
+        },
     },
 });
 

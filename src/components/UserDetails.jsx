@@ -17,7 +17,7 @@ const UserDetails = () => {
     <div className="w-full md:w-[80%] lg:w-[50%]  mx-auto">
       {/* Admin table */}
       <div>
-        <div className="flex items-center justify-between my-5">
+        <div className="flex items-center justify-between my-3">
           <div className="text-gray-500 font-semibold font-serif text-2xl">
             List of User Details 
           </div>
